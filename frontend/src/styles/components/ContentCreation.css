@@ -1,0 +1,140 @@
+.content-creation {
+    max-width: 100%;
+}
+
+.workflow-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border-radius: 20px;
+    margin: 0 5px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.step.active {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.creation-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section {
+    padding: 25px;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    background-color: #fafbfc;
+    transition: border-color 0.3s ease;
+}
+
+.section:hover {
+    border-color: #1da1f2;
+}
+
+.section h3 {
+    color: #495057;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.topic-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.topic-input:focus {
+    outline: none;
+    border-color: #1da1f2;
+}
+
+.approved-outline {
+    background-color: #e8f5e8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #28a745;
+}
+
+.approved-outline strong {
+    color: #155724;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.approved-outline pre {
+    background: none;
+    margin: 0;
+    white-space: pre-wrap;
+    font-family: inherit;
+    color: #155724;
+}
+
+.revision-section {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 2px solid #e9ecef;
+}
+
+.revision-section h4 {
+    color: #495057;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.final-content {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid #28a745;
+    margin-bottom: 20px;
+}
+
+.final-content pre {
+    white-space: pre-wrap;
+    margin: 0;
+    font-family: Georgia, serif;
+    line-height: 1.8;
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+    .workflow-steps {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .step {
+        margin: 2px;
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+
+    .section {
+        padding: 20px 15px;
+    }
+
+    .topic-input {
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+    }
+}

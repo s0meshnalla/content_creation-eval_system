@@ -1,0 +1,255 @@
+.content-evaluation {
+    max-width: 100%;
+}
+
+.evaluation-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.evaluation-header h2 {
+    color: #495057;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.evaluation-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+.no-content {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    color: #6c757d;
+}
+
+.evaluation-controls {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.evaluations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.evaluation-section {
+    background-color: #fafbfc;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.evaluation-section h4 {
+    color: #495057;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.overall-score {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+}
+
+.overall-score strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+.criteria-scores {
+    display: grid;
+    gap: 20px;
+}
+
+.criterion {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.criterion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.criterion-name {
+    font-weight: 600;
+    color: #495057;
+}
+
+.criterion-score {
+    font-weight: 700;
+    color: #495057;
+}
+
+.score-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.score-fill {
+    height: 100%;
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.score-fill.excellent {
+    background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+.score-fill.good {
+    background: linear-gradient(90deg, #17a2b8, #20c997);
+}
+
+.score-fill.fair {
+    background: linear-gradient(90deg, #ffc107, #fd7e14);
+}
+
+.score-fill.poor {
+    background: linear-gradient(90deg, #dc3545, #e83e8c);
+}
+
+.score-text {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.evaluation-summary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.evaluation-summary h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.summary-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.summary-card h4 {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.summary-score {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content-preview {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #e9ecef;
+}
+
+.content-preview h3 {
+    color: #495057;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.preview-section {
+    background-color: #fafbfc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #1da1f2;
+}
+
+.preview-section h4 {
+    color: #495057;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.preview-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.preview-content pre {
+    white-space: pre-wrap;
+    margin: 0;
+    font-family: inherit;
+    line-height: 1.6;
+}
+
+.preview-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .evaluation-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .evaluation-section {
+        padding: 20px 15px;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .criterion-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .score-text {
+        position: static;
+        transform: none;
+        margin-top: 5px;
+        color: #495057;
+        text-shadow: none;
+    }
+}
